@@ -3,12 +3,12 @@
 #include <Adafruit_ST7789.h> // Hardware-specific library for ST7789
 #include <SPI.h>
 
-#define TFT_CS        34
-#define TFT_RST       38
-#define TFT_DC        37
 #define TFT_BACKLIGHT 33
+#define TFT_CS        34
 #define TFT_MOSI      35
 #define TFT_SCLK      36
+#define TFT_DC        37    //MISO?
+#define TFT_RST       38
 
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
